@@ -61,9 +61,12 @@
 
 3.建议node版本5.0.0
     如果有多个版本使用nvm管理
-    安装nvm: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.4/install.sh | bash
+    安装命令:
+
+    nvm: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.4/install.sh | bash
 
 4.若缺少某个包node-sass, 需要单独安装：
+
     npm install node-sass --registry=http://registry.npm.taobao.org -g
 
 ## 快速开始
