@@ -15,6 +15,7 @@ const options = {
   // 多页面共享数据
   state: {
     message: '',
+    author: 'heyunxia',
   },
 
   // 操作

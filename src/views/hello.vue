@@ -2,7 +2,7 @@
   <div class="hello">
     <c-title :text="title"></c-title>
     <img class="logo" src="../assets/images/logo.png">
-    <p class="welcome">欢迎使用 vue</p>
+    <p class="welcome">{{message}} by {{author}}</p>
     <div v-html="content"></div>
   </div>
 </template>
@@ -29,7 +29,10 @@
       this.$store.commit('message', '欢迎使用 vue！');
       this.getContent();
     },
-
+    computed: mapState({
+        message: state => state.message,
+        author: state => state.author
+    }),
     components: {cTitle}
   }
 
