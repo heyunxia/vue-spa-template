@@ -64,6 +64,8 @@
     安装命令:
 
     nvm: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.4/install.sh | bash
+    nvm ls          #查看所有node版本
+    nvm use v5.0.0  #使用node版本5.0.0
 
 4.若缺少某个包node-sass, 需要单独安装：
 
